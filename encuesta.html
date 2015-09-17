@@ -1,0 +1,267 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Beasy</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+        <!-- Place favicon.ico in the root directory -->
+
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+        <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+
+
+        <!-- modificado -->
+        
+        <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
+         <!-- <meta name="viewport" content="user-scalable=no, initial-scale=1" />-->
+        <link rel="stylesheet" type="text/css" href="css/index.css" />
+        <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css" />
+        
+
+        <!--Import Google Icon Font-->
+        <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <!--Import materialize.css-->
+        <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+
+        <!--Let browser know website is optimized for mobile-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link rel="stylesheet" href="css/animate.css">
+        <style>
+        #map {
+            width: 1100px;
+            height: 300px;
+        }
+
+        </style>
+
+
+
+    </head>
+   <body  style="background-color:#BAFFFF">
+
+        <div class="app">
+
+            <nav class="navbar navbar-inverse navbar-fixed-top" style="background-color:#42362F">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6 col-xs-6"></div>
+                        <div class="col-md-6 col-xs-6">
+                            <div class="Center-Block Absolute-Center">
+                                <div class="navbar-header">
+
+                                    <a class="navbar-brand-top" href="#"> <img data-src="holder.js/60x60" class="responsive-img" alt="Responsive image" src=".\img\text128x128.png" data-holder-rendered="true"  style="width:60px; height: 60px;" ></a>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+
+        <div class="row">
+            <div class="col-md-12 col-xs-12"></div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 col-xs-12"></div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 col-xs-12"></div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 col-xs-12"></div>
+        </div>
+
+        <div class="row" id="panel-pregunta" >
+            <p align="center" id="pregunta" >¿Qué opinas de esta parte de la ruta?</p>
+            <div class="col-md-12 col-xs-12"></div>  
+        </div>
+
+
+
+        <div id="map" style="top: 5px; left: 10%;" ></div>
+        
+
+
+        
+        <div class="row">
+           <div class="col-md-12 col-xs-12"></div>
+        </div>
+
+
+            <div class="fixed-action-btn" style="bottom: 45px; left: 30%;" id="botonnogusta">
+             <a class="waves-effect waves-light btn-large red accent-3"><i class="material-icons">thumb_down</i></a>
+            </div>
+
+             <div class="fixed-action-btn" style="bottom: 45px; left: 60%;" id="botongusta">
+             <a class="waves-effect waves-light btn-large  light-green accent-3"><i class="material-icons">thumb_up</i></a>
+             </div>
+             <div class="fixed-action-btn" style="bottom: 120px; left: 44%;" id="botonsaltar">
+             <a class="waves-effect waves-light btn">saltar</a>
+             </div>
+
+
+        <div class="fixed-action-btn" style="bottom: 45px; right: 24px;" id="botongrande">
+          <a class="btn-floating btn-large teal lighten-2">
+            <!--<i class="material-icons">reorder</i>-->
+            <i class="material-icons">view_headline</i>
+          </a>
+          <ul>
+            <li><a class="btn-floating cyan darken-4" style="transform: scaleY(0.4) scaleX(0.4) translateY(40px); opacity: 0;"><i class="glyphicon glyphicon-map-marker"></i></a></li>
+            <li><a class="btn-floating cyan darken-4" style="transform: scaleY(0.4) scaleX(0.4) translateY(40px); opacity: 0;"><i class="glyphicon glyphicon-wrench"></i></a></li>
+            <li><a class="btn-floating cyan darken-4" style="transform: scaleY(0.4) scaleX(0.4) translateY(40px); opacity: 0;"><i class="material-icons">live_help</i></a></li>
+            <li><a class="btn-floating cyan darken-4" style="transform: scaleY(0.4) scaleX(0.4) translateY(40px); opacity: 0;"><i class="material-icons">perm_identity</i></a></li>
+          </ul>
+        </div>
+        
+
+        </div>
+
+
+        <!--Import jQuery before materialize.js-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.3.min.js"><\/script>')</script>
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+
+        <!--modificado-->
+        <!--Import jQuery before materialize.js-->
+        <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+        <script type="text/javascript" src="js/materialize.min.js"></script>        <script type="text/javascript" src="js/index.js"></script>
+        <script type="text/javascript" src="js/jquery.js"></script>
+        <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDyYnmU_F2uawpPqZu7y4qC-BdD3V_GY_U"></script>
+
+
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+
+
+
+
+
+
+
+        <script>
+        function initialize() {
+            var mapCanvas = document.getElementById('map');
+            var mapOptions = {
+              center: new google.maps.LatLng(19.3737411,-99.1827774),
+              zoom: 15,
+              mapTypeId: google.maps.MapTypeId.ROADMAP,
+          }
+          var map = new google.maps.Map(mapCanvas, mapOptions)
+          }
+          google.maps.event.addDomListener(window, 'load', initialize);
+          </script>
+          <script type="text/javascript">
+
+            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            e.src='https://www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+            ga('create','UA-XXXXX-X','auto');ga('send','pageview');
+
+
+
+            app.initialize();
+            
+           
+
+
+            $('#map').addClass('animated bounceInDown');
+            window.setTimeout( function(){
+                    $("#map").removeClass('animated bounceInDown');
+                }, 2000);  
+
+            $('#botongusta').addClass('animated bounceInUp');
+            window.setTimeout( function(){
+                    $("#botongusta").removeClass('animated bounceInUp');
+                }, 2000); 
+
+            $('#botonnogusta').addClass('animated bounceInUp');
+            window.setTimeout( function(){
+                    $("#botonnogusta").removeClass('animated bounceInUp');
+                }, 2000); 
+
+
+            $('#botonsaltar').addClass('animated bounceInUp');
+            window.setTimeout( function(){
+                    $("#botonsaltar").removeClass('animated bounceInUp');
+                }, 2000); 
+
+            $('#pregunta').addClass('animated bounceInDown');
+            window.setTimeout( function(){
+                    $("#pregunta").removeClass('animated bounceInUp');
+                }, 2000); 
+
+
+           $( "#botongusta" ).click(function( event ) {
+
+                
+                $('#pregunta').addClass('animated bounceOutUp');
+                $('#map').addClass('animated bounceOutUp');
+                $('#botonnogusta').addClass('animated bounceOutDown');
+                $('#botongusta').addClass('animated bounceOutDown');
+                $('#botonsaltar').addClass('animated bounceOutDown')
+
+                window.setTimeout( function(){
+                    window.location.href = "./index.html";
+                }, 2000);         
+
+
+                event.preventDefault();
+            });
+
+             $( "#botonnogusta" ).click(function( event ) {
+
+                
+                $('#pregunta').addClass('animated bounceOutUp');
+                $('#map').addClass('animated bounceOutUp');
+                $('#botonnogusta').addClass('animated bounceOutDown');
+                $('#botongusta').addClass('animated bounceOutDown');
+                $('#botonsaltar').addClass('animated bounceOutDown')
+
+                window.setTimeout( function(){
+                    window.location.href = "./index.html";
+                }, 2000);         
+
+
+                event.preventDefault();
+            });
+
+             $( "#botonsaltar" ).click(function( event ) {
+
+                
+                $('#pregunta').addClass('animated bounceOutUp');
+                $('#map').addClass('animated bounceOutUp');
+                $('#botonnogusta').addClass('animated bounceOutDown');
+                $('#botongusta').addClass('animated bounceOutDown');
+                $('#botonsaltar').addClass('animated bounceOutDown')
+
+                window.setTimeout( function(){
+                    window.location.href = "./index.html";
+                }, 2000);         
+
+
+                event.preventDefault();
+            });
+
+
+
+
+
+
+
+
+
+
+        </script>
+    </body>
+</html>
